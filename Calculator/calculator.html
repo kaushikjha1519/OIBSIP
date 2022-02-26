@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+            
+        <h1 style="font-family: Lobster; font-size: 50px;">Calculator</h1>
+        <div class="calculator">
+        <input type="text" placeholder="Calculator" name="display" id="display">
+        <div class="buttons">
+            <table>
+                <tr>
+                    <td><button type="button" value="AC" onclick="remove()">AC</button></td>
+                    <td><button type="button" value="backspace" onclick="backspace()">x</button></td>
+                    <td><button type="button" value="%" onclick="percent()">%</button></td>
+                    <td><button type="button" value="/" onclick="number(value)">/</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" value="sin" onclick="sin()">sin</button></td>
+                    <td><button  type="button" value="cos" onclick="cos()">cos</button></td>
+                    <td><button  type="button" value="tan" onclick="tan()">tan</button></td>
+                    <td><button  type="button" value="ln" onclick="ln()">ln</button></td>
+                </tr>
+                <tr>
+                   
+                    <td><button type="button" value="7" onclick="number(value)">7</button></td>
+                    <td><button type="button" value="8" onclick="number(value)">8</button></td>
+                    <td><button type="button" value="9" onclick="number(value)">9</button></td>
+                    <td><button type="button" value="*" onclick="number(value)">*</button></td>
+                </tr>
+                <tr>
+                    
+                    <td><button type="button" value="4" onclick="number(value)">4</button></td>
+                    <td><button type="button" value="5" onclick="number(value)">5</button></td>
+                    <td><button type="button" value="6" onclick="number(value)">6</button></td>
+                    <td><button type="button" value="-" onclick="number(value)">-</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" value="1" onclick="number(value)">1</button></td>
+                    <td><button type="button" value="2" onclick="number(value)">2</button></td>
+                    <td><button type="button" value="3" onclick="number(value)">3</button></td>
+                    <td><button type="button" value="+" onclick="number(value)">+</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" value="sqrt" onclick="sqrt()"> &radic; </button></td>
+                    <td><button type="button" value="0" onclick="number(value)">0</button></td>
+                    <td><button type="button" value="." onclick="number(value)">.</button></td>
+                    <td><button type="button" value="." onclick="calculate()" style="background-color: rgb(43 63 195);">=</button></td>
+                </tr>
+
+            </table>
+        </div>
+        </div>
+
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

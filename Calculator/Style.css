@@ -1,0 +1,32 @@
+
+body{
+    background-image: linear-gradient(to right, pink, blue);
+    }
+.container{
+    text-align: center;
+
+}
+table{
+    margin: auto;
+}
+input{
+    background-color: darkgray;
+    border-radius: 10px;
+    font-size: 25px;
+    height: 50px;
+    margin: 7px
+}
+button{
+    font-size: 28px;
+    background-color: black;
+    color: aliceblue;
+    width: 77px;
+    height: 63px;
+    border-radius: 25px
+}
+.calculator{
+    display: inline-block;
+    border: 3px solid rgb(0 84 240 / 0%);
+    background-color: #8011bf;
+    border-radius: 17px;
+}
