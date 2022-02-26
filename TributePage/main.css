@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gideon+Roman&family=Praise&display=swap');
+body{
+    background-image: linear-gradient(to right,gray,black);
+    font-family: Dancing Script;
+}
+.container{
+    width: 525px;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+    box-sizing: border-box;
+    flex-direction: row;
+  }
+    .carousel-item img {
+        border: 2px solid gray;
+        width: auto;
+        height: 255px;
+        max-height: 255px;
+      
+    } 
+    
+  .column2{
+    flex: 1;
+    padding: 10px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    
+  }
+  .carousel .item {
+    height: 300px;
+  }
+  
+  .item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 300px;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+  }
+  .about{
+    color:aliceblue ;
+    width: 600px;
+    margin: auto;
+    display: inline;
+    
+  }
+  .about .first_para{
+    background-image: none;
+    color: aliceblue;
+    font-size: 32px;
+    
+    text-align: center;
+  }
+  .second_para{
+    font-family: 'Gideon Roman', cursive;
+  }
+
+  @media screen and (max-width: 768px){
+    .container{
+      flex-direction: column-reverse;
+    }
+  }
