@@ -1,0 +1,130 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lobster';
+  background-image: linear-gradient(to right,#000000, #2c9ba085);
+  color: #fff;
+}
+
+.container{
+  width: 1280px;
+  margin: auto;
+}
+
+
+h1{
+  text-align: center;
+	margin: 1rem 0 3rem; 
+}
+
+.user_input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_input input{
+  width: 35%;
+  outline: none;
+  padding: 8px;
+  color: #000000;
+  border: 1px solid lightgray;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+}
+#error {
+  display: block;
+  color: rgb(255, 238, 0);
+  font-size: 20px;
+  text-align: center;
+}
+
+.user_input input:focus{
+  box-shadow: 0 0 5px #f53900;
+  border: 1px solid #e23e28;
+}
+
+.user_input button{
+  cursor: pointer;
+  padding: 8px;
+  width: fit-content;
+  color: black;
+  transition: 1s;
+  outline: none;
+  background-color: #75938a;
+  border: 1px solid lightgray;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.user-input button:hover{
+  background-color: transparent;
+  color: white;
+}
+
+#to_do_list{
+  width: 500px;
+  margin: auto;
+}
+
+.item{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  color: #000000;
+  margin-top:10px;
+  font-size: 20px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+}
+
+.item:hover{
+  box-shadow: 0 0 20px #e73e0b;
+  border: 1px solid #e42d0d;
+}
+
+
+.item i{
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+@media(max-width:1280px){
+  .container{width: 100%;}
+}
+
+@media(max-width:768px){
+  .container{width: 95%;}
+
+
+  .user_input{width: 100%;}
+
+  #to_do_list{width: 100%;}
+}
+
+@media(max-width:480px){
+  .user_input input{width: 74%;}
+}
+
+@media(max-width:320px){
+  .user_input input{width: 60%;}
+}
